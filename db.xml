@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 
-<schema xmlns="http://www.concrete5.org/doctrine-xml/0.5"
-		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-		xsi:schemaLocation="http://www.concrete5.org/doctrine-xml/0.5 https://concrete5.github.io/doctrine-xml/doctrine-xml-0.5.xsd">
+<schema version="0.3"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.concrete5.org/doctrine-xml/0.5 https://www.concrete5.org/doctrine-xml/0.5.xsd">
     <table name="btThreeJs">
-        <field name="bID" type="integer">
+        <field name="bID" type="I">
             <unsigned />
             <autoincrement />
             <primary />

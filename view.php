@@ -14,12 +14,12 @@ defined('C5_EXECUTE') or die('Access Denied.');
     var scene = new THREE.Scene();
     
     // Set up the camera
-    var camera = new THREE.PerspectiveCamera(75, (window.innerWidth/2) / (window.innerHeight/2), 0.1, 1000);
+    var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
     camera.position.z = 5;
     
     // Set up the renderer
     var renderer = new THREE.WebGLRenderer();
-    renderer.setSize(window.innerWidth/2, window.innerHeight/2);
+    renderer.setSize(window.innerWidth, window.innerHeight);
     document.getElementById('threejs-container').appendChild(renderer.domElement);
     
     // Create a cube
